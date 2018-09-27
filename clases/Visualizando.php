@@ -2,17 +2,23 @@
 
     /**
      * Autor: Camilo Figueroa (Crivera)
-     *
+     * Esta clase se encargará de organizar la información de la base de datos para que los archivos de vista o con html
+     * puedan usar esos datos.
      */
 
-    class Visualizando
+    include( "BD.php" ); //Se importa la clase de base de datos.
+     
+    //Se implementa la herencia de todos los métodos de la BD.
+    //La herencia permite usar los métodos o funciones de la base de datos
+    class Visualizando extends BD 
     {
+        
         
         /**
          * Este es el constructor. 
          *
          */
-        public function Visualizando()
+        public function Visualizando() 
         {
             
         }
